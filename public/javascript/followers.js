@@ -4,9 +4,7 @@ await function followUser() {
     const recipe_id = parseInt(window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ]);
-
     const personToGetFollowedUserId;
-
     const response1 = await fetch('/api/recipe/' + post_id);
     if (response1.ok) {
         personToGetFollowedUserId = response1.user_id
@@ -21,7 +19,6 @@ await function followUser() {
             recipe_id: recipe_id
         })
     })
-
     if (response.ok) {
         return;
     } else {
