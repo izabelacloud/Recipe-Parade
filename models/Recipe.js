@@ -26,10 +26,6 @@ Recipe.init(
         type: DataTypes.TEXT,
         allowNull: false
       },
-      image_url: {
-        type: DataTypes.BLOB,
-        allowNull: false,
-      },
       user_id: {
         type: DataTypes.INTEGER,
         references: {

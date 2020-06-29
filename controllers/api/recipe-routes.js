@@ -135,7 +135,6 @@ router.post('/', withAuth, (req, res) => {
         title: req.body.title,
         ingredients: req.body.ingredients,
         directions: req.body.directions,
-        image_url: req.body.image_url,
         user_id: req.session.user_id
     })
         .then(dbRecipeData => res.json(dbRecipeData))
