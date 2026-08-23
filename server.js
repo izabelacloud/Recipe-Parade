@@ -52,6 +52,15 @@ app.use(routes);
 
 
 // turn on connection to db and server
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: false }).then(async () => {
+  if (process.env.SEED_ON_BOOT === 'true') {
+    const seedUsers = require('./seeds/user-seeds');
+    const seedRecipes = require('./seeds/recipe-seeds');
+    const seedComments = require('./seeds/comment-seeds');
+    await seedUsers();
+    await seedRecipes();
+    await seedComments();
+    console.log('Seed data inserted (SEED_ON_BOOT)');
+  }
   app.listen(PORT, () => console.log('Now listening'));
 });
