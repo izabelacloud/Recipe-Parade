@@ -9,6 +9,7 @@ The Recipe Parade is an application where the users can sign up and the manage t
 * [Deployed Application](#deployed-application)
 * [User Story](#user-story)
 * [Usage](#usage)
+* [Local Setup](#local-setup)
 * [License](#license)
 * [Contributing](#contributing)
 * [Questions](#questions)
@@ -16,7 +17,10 @@ The Recipe Parade is an application where the users can sign up and the manage t
 
 ## Deployed Application 
 
-[Recipe Parade Heroku App](https://recipe-parade.herokuapp.com/)
+[Recipe Parade](https://recipe-parade-web-production.up.railway.app/)
+
+Hosted on [Railway](https://railway.app/) with a managed MySQL database (previously deployed on Heroku, which discontinued its free tier).
+
 ![Hero](https://github.com/izabelacloud/Recipe-Parade/blob/master/assets/Hero-Image.png?raw=true)
 ![Recipes](https://github.com/izabelacloud/Recipe-Parade/blob/master/assets/Recipes.png?raw=true)
 ![Comments Ratings](https://github.com/izabelacloud/Recipe-Parade/blob/master/assets/Comments%20Ratings.png?raw=true)
@@ -66,6 +70,24 @@ THEN I am automatically signed out of the site<br />
 
 ## Usage
 The Recipe Parade is an application where the users can sign up and the manage the recipes. The users will be able to search the database of recipes, add new recipes, save recipes to their favorites and rate and comment on recipes.
+
+## Local Setup
+
+This app requires Node.js 18+ and a MySQL database.
+
+1. Install dependencies: `npm install`
+2. Create a MySQL database (e.g. `CREATE DATABASE recipe_parade;`)
+3. Create a `.env` file with:
+
+   ```text
+   DB_NAME=recipe_parade
+   DB_USER=your_mysql_user
+   DB_PW=your_mysql_password
+   ```
+
+4. Seed the database: `npm run seed`
+5. Start the server: `npm start` (or `npm run watch` for auto-reload during development)
+6. Visit `http://localhost:3001`
 
 ## License
 
