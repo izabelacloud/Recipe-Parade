@@ -17,14 +17,9 @@ The Recipe Parade is an application where the users can sign up and the manage t
 
 ## Deployed Application 
 
-[Recipe Parade](https://recipe-parade-web-production.up.railway.app/)
+Not currently deployed. Previously hosted on [Railway](https://railway.app/) with a managed MySQL database (and before that on Heroku, which discontinued its free tier); the Railway project was removed to free up a resource slot for another app. See [Local Setup](#local-setup) below to run it yourself.
 
-Hosted on [Railway](https://railway.app/) with a managed MySQL database (previously deployed on Heroku, which discontinued its free tier).
-
-![Hero](https://github.com/izabelacloud/Recipe-Parade/blob/master/assets/Hero-Image.png?raw=true)
-![Recipes](https://github.com/izabelacloud/Recipe-Parade/blob/master/assets/Recipes.png?raw=true)
-![Comments Ratings](https://github.com/izabelacloud/Recipe-Parade/blob/master/assets/Comments%20Ratings.png?raw=true)
-![New Recipe](https://github.com/izabelacloud/Recipe-Parade/blob/master/assets/New%20Recipe.png?raw=true)
+![Homepage](https://github.com/izabelacloud/Recipe-Parade/blob/master/assets/homepage.png?raw=true)
 
 
 ## User Story 
